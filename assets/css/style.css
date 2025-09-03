@@ -1,0 +1,140 @@
+:root { 
+    --bg: #f6f7fb; 
+    --ink: #0f172a; 
+    --muted: #64748b; 
+    --line: #e5e7eb; 
+    --panel: #ffffff; 
+    --accent: #2563eb; 
+} 
+* { 
+    box-sizing: border-box 
+} 
+
+body { 
+    margin: 0; 
+    background-color: #f6f7fb; 
+    font: 16px system-ui, Roboto, Arial, sans-serif 
+} 
+
+.wrap { 
+    display: flex; 
+    gap: 16px; 
+    padding: 20px; 
+    flex-wrap: wrap;
+} 
+
+aside { 
+    background: #0f172a; 
+    color: #e2e8f0; 
+    border: 1px solid #0b1220; 
+    border-radius: 14px; 
+    padding: 14px; 
+    flex: 1; 
+} 
+
+.foto { 
+    width: 100%; 
+    border-radius: 12px; 
+    display: block; 
+    margin-bottom: 12px 
+}
+
+aside > h1{
+    font-size: 24px;
+}
+
+aside .contacts > div {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    margin: 6px 0;
+}
+
+aside .contacts a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+aside .contacts a:hover {
+    text-decoration: underline;
+}
+
+main { 
+    flex: 3; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 16px; 
+} 
+
+main .biodata { 
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+}
+
+main .biodata .card > h1{
+    font-size: 24px;
+}
+
+main .biodata .card { 
+    background: #fefefe; 
+    border: 2px solid #e5e7eb; 
+    border-radius: 12px;
+    padding: 0 14px 14px 14px; 
+} 
+
+main .biodata .pendidikan {
+    padding: 12px 0 14px;
+}
+
+main .biodata .pendidikan .kuliah, 
+main .biodata .pendidikan .sma { 
+    display: flex; 
+    justify-content: space-between; 
+    flex-shrink: 0;
+} 
+
+main .biodata .pendidikan .sma {
+    padding: 20px 0 0 0;
+}
+
+main .biodata .pendidikan .ket * { 
+    margin: 0;
+} 
+
+main .biodata .pendidikan .tahun {
+    text-align: right;
+}
+
+main .pribadi { 
+    --label-w: 200px;
+}
+
+main .pribadi .row {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+    gap: 20px;
+}
+
+main .pribadi .row h4 { 
+    width: var(--label-w);
+    flex-shrink: 0;
+}
+
+main .pribadi .row p { 
+    flex: 6 1 auto; 
+}
+
+main .pribadi > .row:last-child{
+    border-bottom:0;
+}
+
+h4, p { 
+    margin: 0px; 
+}
+
+h4 { 
+    color: #0f172a;
+  }
