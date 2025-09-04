@@ -1,0 +1,44 @@
+html, body { 
+    height: 100%; 
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 24px;
+    font-family: sans-serif, "Times New Roman", serif;
+    background:#f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th {
+    padding: 10px;
+}
+
+th, td {
+    border: 1px solid rgb(23, 23, 23);
+    border-top: 1px solid rgb(23, 23, 23);
+    border-left: 1px solid rgb(23, 23, 23);
+}
+
+thead th { 
+    background: #858585; 
+    text-transform: uppercase;
+}
+
+tbody td {
+    text-transform: capitalize;
+}
+
+.dosen2 {
+    text-transform: uppercase;
+}
+
+tfoot td {
+    text-transform: uppercase;
+    background: #858585;
+    text-align: center;
+    font-weight: 600;
+}

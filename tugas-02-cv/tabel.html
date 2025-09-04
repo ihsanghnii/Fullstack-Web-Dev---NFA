@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <table border="1" cellpadding="12">
+        <thead>
+            <tr>
+                <th>hari</th>
+                <th>jam</th>
+                <th>mata kuliah</th>
+                <th>dosen</th>
+                <th>ruang</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">senin</td>
+                <td>08.00-10.00</td>
+                <td>Kajian Islam</td>
+                <td>ust. anwar nashidin, lc.</td>
+                <td>ruang teori</td>
+            </tr>
+            <tr>
+                <td>10.00-12.00</td>
+                <td>aplikasi perkantoran</td>
+                <td>drs. <span class="dosen2">mgs</span> hendri, m.m</td>
+                <td rowspan="5">ruang 1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">selasa</td>
+                <td>08.00-10.00</td>
+                <td>linux fundamental</td>
+                <td>henry saptono, s.si, m.kom</td>
+            </tr>
+            <tr>
+                <td>10.00-12.00</td>
+                <td>html, css &amp; javascript</td>
+                <td rowspan="3">sirojul munir, s.si, m.kom</td>
+            </tr>
+            <tr>
+                <td rowspan="2">rabu</td>
+                <td>08.00-10.00</td>
+                <td>basis data</td>
+            </tr>
+            <tr>
+                <td>10.00-12.00</td>
+                <td>algoritma dan pemrograman</td>
+            </tr>
+            <tr>
+                <td rowspan="2">kamis</td>
+                <td>08.00-10.00</td>
+                <td>kewirausahaan &amp; pengembangan diri</td>
+                <td>khoirul umam, s.pd</td>
+                <td rowspan="2">ruang teori</td>
+            </tr>
+            <tr>
+                <td>10.00-12.00</td>
+                <td>bahasa inggris</td>
+                <td>drs. mahfudz</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">jadwal dapat berubah sewaktu-waktu</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
