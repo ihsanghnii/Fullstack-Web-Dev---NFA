@@ -4,15 +4,25 @@ body {
 }
 
 #navbar .nav-link{
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
-#navbar .btn {
+#navbar .active {
+    color: #578AB7;
+}
+
+#navbar .inactive:hover {
+    color: #578AB7;
+}
+
+#navbar .btn,
+#main-content .btn {
     background-color: #578AB7;
     color: #fefefe;
 }
 
-#navbar .btn:hover {
+#navbar .btn:hover,
+#main-content .btn:hover {
     background-color: #324f69;
     color: #fefefe;
 }

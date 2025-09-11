@@ -45,7 +45,7 @@
 
     <nav class="navbar navbar-expand-md bg-body-tertiary" id="navbar">
         <div class="container-fluid py-2 align-items-center">
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
                 <img src="assets/img/logo.png" alt="Bootstrap" width="30" height="24">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,10 +53,10 @@
             </button>
             <div class="collapse navbar-collapse align-items-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active fw-bold" aria-current="page" href="home.html">Home</a>
-                    <a class="nav-link fw-bold" href="study.html">MyStudy</a>
-                    <a class="nav-link fw-bold" href="gallery.html">Gallery</a>
-                    <a class="nav-link fw-bold" href="datatables.html">Datatable</a>
+                    <a class="nav-link inactive fw-bold" aria-current="page" href="home.html">Home</a>
+                    <a class="nav-link active fw-bold" href="study.html">MyStudy</a>
+                    <a class="nav-link inactive fw-bold" href="gallery.html">Gallery</a>
+                    <a class="nav-link inactive fw-bold" href="datatables.html">Datatable</a>
                 </div>
                 <div class="ms-md-auto d-flex align-items-center">
                     <a class="btn fs-6 fw-semibold px-3 py-2 mt-2 mt-md-0" href="login.html">Login</a>
@@ -67,7 +67,7 @@
 
     <main class="container-fluid py-4">
         <div class="row">
-            <aside class="col-lg-3 mb-4 mb-lg-0" id="content">
+            <aside class="col-lg-3 order-2 order-md-1" id="content">
                 <div class="card">
                     <h5 class="card-header fw-bold text-center">Website</h5>
                     <div class="card-body">
@@ -101,7 +101,7 @@
                     </div>
                 </div>
             </aside>
-            <section class="col-lg-9" id="main-content">
+            <section class="col-lg-9 mb-4 mb-lg-0 order-1 order-md-2" id="main-content">
                 <div class="card">
                     <h5 class="card-header fw-bold text-center">Riwayat Pendidikan</h5>
                     <div class="card-body table-responsive">
