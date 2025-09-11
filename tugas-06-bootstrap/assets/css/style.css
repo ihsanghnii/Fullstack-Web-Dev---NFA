@@ -1,0 +1,39 @@
+body {
+    background: #fefefe;
+    font-family: 'Nunito', sans-serif;
+}
+
+#navbar .nav-link{
+    font-size: 1rem;
+}
+
+#navbar .btn {
+    background-color: #578AB7;
+    color: #fefefe;
+}
+
+#navbar .btn:hover {
+    background-color: #324f69;
+    color: #fefefe;
+}
+
+#content li a:hover {
+    background-color: #578AB7;
+    color: #fefefe;
+}
+
+#main-content .text-justify {
+    text-align: justify;
+}
+
+footer {
+    background-color: #578AB7;
+}
+
+#sosmed a, .small {
+    color: #fefefe;
+}
+
+#sosmed a:hover {
+    color: #324f69;
+}
