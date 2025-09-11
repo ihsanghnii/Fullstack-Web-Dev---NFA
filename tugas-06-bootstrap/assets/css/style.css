@@ -3,16 +3,19 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-#navbar .nav-link{
-    font-size: 1.1rem;
+#navbar .nav-link { 
+    font-size:1.1rem; 
+    color: #1f2937; 
 }
 
-#navbar .active {
-    color: #578AB7;
+#navbar .nav-link:hover { 
+    color: #578AB7; 
 }
 
-#navbar .inactive:hover {
+#navbar .nav-link .active,
+#navbar .nav-link[aria-current="page"] {
     color: #578AB7;
+    border-bottom:3px solid #578AB7;
 }
 
 #navbar .btn,
