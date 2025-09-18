@@ -1,0 +1,33 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 24px;
+    font-family: sans-serif, "Times New Roman", serif;
+    background:#f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    padding: 8px;
+    color: #2e2e2e;
+}
+
+td {
+    padding: 8px;
+}
+
+th, td {
+    border: 1px solid rgb(23, 23, 23);
+    border-top: 1px solid rgb(23, 23, 23);
+    border-left: 1px solid rgb(23, 23, 23);
+}
+
+thead th { 
+    background: #d7d6d6; 
+    text-transform: capitalize;
+}
+
+tbody td {
+    text-transform: capitalize;
+}
