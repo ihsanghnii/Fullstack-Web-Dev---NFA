@@ -7,18 +7,37 @@
 </head>
 <body>
     <script>
-        const p = 10;  // nilai dari panjang persegi
-        const l = 20; // nilai dari lebar persegi
-        const s = 8; // nilai sisi dari bujur sangkar
-        const a = 4; // nilai alas dari segitiga
-        const t = 8; // nilai tinggi dari segitiga
-        const luasP = p*l; // rumus luas persegi panjang
-        const luasB = s*s; // rumus luas bujur sangkar
-        const luasS = 0.5*a*t // rumus luas segitiga
+        // fungsi untuk luas persegi panjang dengan parameter panjang (p) dan lebar (l)
+        function luasPersegiPanjang(p, l) {
+            return p * l;
+        }
+
+        // fungsi untuk luas segitiga dengan parameter alas (a) dan tinggi (t)
+        function luasSegitiga(a, t) {
+            return 0.5 * a * t;
+        }
+
+        // fungsi untuk luas bujur sangkar dengan parameter sisi (s)
+        function luasBujurSangkar(s) {
+            return s * s;
+        }
+
+        const p = 10; // variabel p dengan nilai untuk panjang persegi
+        const l = 20; // variabel l dengan nilai untuk lebar persegi
+        const a = 4;  // variabel a dengan nilai alas untuk segitiga
+        const t = 8;  // variabel t dengan nilai tinggi untuk segitiga
+        const s = 8;  // variabel s dengan nilai sisi untuk bujur sangkar
+
+        // variabel untuk panggil fungsi luas
+        const luasP = luasPersegiPanjang(p, l);
+        const luasS = luasSegitiga(a, t);
+        const luasBS = luasBujurSangkar(s);
+
         // output
         document.write("luas dari persegi panjang dengan panjang " + p + " cm dan lebar " + l + " cm adalah " + luasP + " cm² <br>");
-        document.write("luas dari bujur sangkar dengan sisi " + s + " cm adalah " + luasB + " cm² <br>")
-        document.write("luas dari segitiga dengan alas " + a + " cm dan tinggi " + t + " cm adalah " + luasS + " cm²")
+        document.write("luas dari segitiga dengan alas " + a + " cm dan tinggi " + t + " cm adalah " + luasS + " cm²");
+        document.write("luas dari bujur sangkar dengan sisi " + s + " cm adalah " + luasBS + " cm² <br>")
+
     </script>
 </body>
 </html>
