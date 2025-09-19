@@ -28,7 +28,7 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            gap: 14px;
+            gap: 16px;
         }
         
         .nama,
@@ -60,6 +60,38 @@
             display: none;
             width: 100%;
             border: 1px solid rgb(115, 115, 115);
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid rgb(115, 115, 115);
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+        }
+
+        .submit {
+            margin-bottom: 24px;
+        }
+
+        button {
+            padding: 8px 24px;
+            border-radius: 4px;
+            border: 1px solid rgb(115, 115, 115);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(212, 212, 212);
+        } 
+
+        tfoot {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -93,7 +125,7 @@
                 </select>
             </div>
             <div class="submit">
-                <button type="submit">Tambah pegawai</button>
+                <button type="submit">Submit</button>
             </div>
         </form>
         <table id="tabelPegawai">
@@ -107,12 +139,11 @@
                     <th>Tunjangan Jabatan</th>
                     <th>BPJS</th>
                     <th>Tunjangan Keluarga</th>
-                    <th>Total Gaji</th>
                 </tr>
             </thead>
             <tbody id="tbodyPegawai"></tbody>
-            <tfoot>
-
+            <tfoot id="total">
+                
             </tfoot>
         </table>
     </div>
@@ -120,6 +151,8 @@
     <script>
         const form = document.getElementById("pgw");
         const tabel = document.getElementById("tabelPegawai");
+
+        let totalSeluruh = 0;
 
         form.addEventListener("submit", function (e) {
             e.preventDefault();
@@ -143,6 +176,24 @@
 
             const tbody = document.getElementById("tbodyPegawai");
             const newRow = tbody.insertRow();
+            newRow.insertCell().innerHTML = nama;
+            newRow.insertCell().innerHTML = umur;
+            newRow.insertCell().innerHTML = jabatan;
+            newRow.insertCell().innerHTML = status;
+            newRow.insertCell().innerHTML = gaPok;
+            newRow.insertCell().innerHTML = tunjangan_jabatan;
+            newRow.insertCell().innerHTML = bpjs;
+            newRow.insertCell().innerHTML = tunjangan_Keluarga;
+
+            totalSeluruh += total_gaji;
+
+            const tfoot = document.getElementById("total");
+            tfoot.innerHTML = `
+            <tr>
+                <td>Total Gaji Akhir:</td>
+                <td colspan="7">${totalSeluruh}</td>
+            </tr>
+            `;
         })
 
     </script>
