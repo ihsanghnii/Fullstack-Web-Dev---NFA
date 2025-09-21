@@ -43,4 +43,4 @@ tampilkanProduk();
 
 console.log(" --- Hapus Produk --- ");
 hapusProduk(1);
-tampilkanProduk();
+tampilkanProduk()
