@@ -38,9 +38,9 @@ console.log(" --- Daftar Produk --- ");
 tampilkanProduk();
 
 console.log(" --- Tambah Produk baru --- ");
-tambahProduk("Monitor", 1500000, 10);
+tambahProduk("Meja", 1500000, 10);
 tampilkanProduk();
 
 console.log(" --- Hapus Produk --- ");
 hapusProduk(1);
-tampilkanProduk()
+tampilkanProduk();
