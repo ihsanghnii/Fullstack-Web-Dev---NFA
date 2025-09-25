@@ -37,5 +37,4 @@ const main = () => {
     });
 };
 
-// Jalankan fungsi utama
 main();
