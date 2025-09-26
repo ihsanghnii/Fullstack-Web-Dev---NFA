@@ -1,35 +1,87 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+/**
+ * membuat component header 
+ * component header menampilkan navigasi
+ */
 
+function Header() {
+  return (
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  );
+}
+
+/**
+ * membuat component content
+ * component content menampung konten utama
+ */
+
+function Content() {
+  return <h1>Content</h1>;
+}
+
+/**
+ * membuat component footer
+ * component footer menampilkan footer
+ */
+
+function Footer() {
+  return (
+    <footer>
+      <h2>NF Academy</h2>
+      <p>Created by React JS</p>
+    </footer>
+  );
+}
+
+/**
+ * 
+ * 
+ */
+
+function Hello() {
+  const nama = "Ihsan";
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <h2>Hello React</h2>
+    <p>Saya {nama} - Seorang Frontend Developer</p>
+    </>
+  );
+}
+
+function Greeting(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+function Profile(props) {
+  return (
+    <>
+    <h1>{props.name}</h1>
+    <p>{props.age}</p>
+    <p>{props.country}</p>
     </>
   )
+}
+
+function App() {
+  return (
+  // ini fragemnet ( <> )
+  <> 
+    <Header />
+    <Content />
+    <Hello />
+    <Greeting name ="alice" />
+    <Greeting name ="bob" />
+    <Profile name ="Ghani" age={25} country="Indonesia" />
+    <Footer />
+  </>
+  );
 }
 
 export default App
