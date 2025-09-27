@@ -15,8 +15,8 @@ function Contact() {
       </section>
 
       <div className="container px-4 py-5">
-        <div className="row gx-5 gy-5 align-items-center">
-          <div className="col-lg-6">
+        <div className="row justify-content-center align-items-center gx-5 gy-5">
+          <div className="col-lg-8">
             <h2 className="fw-bold text-body-emphasis mb-3">Location</h2>
             <div className="ratio ratio-4x3 rounded-3 overflow-hidden">
               <iframe
@@ -29,8 +29,8 @@ function Contact() {
             </div>
           </div>
 
-          <div className="col-lg-6">
-            <h2 className="fw-bold text-body-emphasis mb-4">Get in Touch</h2>
+          <div className="col-lg-4">
+            <h2 className="fw-bold mb-4">Get in Touch</h2>
             <div className="d-flex flex-column gap-4">
               <a
                 href="#"
@@ -42,7 +42,6 @@ function Contact() {
                 ></i>
                 <h5 className="fw-semibold mb-0">@Bookstore</h5>
               </a>
-
               <a
                 href="#"
                 className="d-flex align-items-center text-decoration-none text-body"
@@ -53,7 +52,6 @@ function Contact() {
                 ></i>
                 <h5 className="fw-semibold mb-0">@BookstoreOfficial</h5>
               </a>
-
               <a
                 href="mailto:BookstoreID@gmail.com"
                 className="d-flex align-items-center text-decoration-none text-body"
@@ -64,7 +62,6 @@ function Contact() {
                 ></i>
                 <h5 className="fw-semibold mb-0">BookstoreID@gmail.com</h5>
               </a>
-
               <a
                 href="tel:+62812345678"
                 className="d-flex align-items-center text-decoration-none text-body"
@@ -73,7 +70,7 @@ function Contact() {
                   className="fa-solid fa-phone fa-2xl me-3"
                   style={{ color: "#198754", width: "32px" }}
                 ></i>
-                <h5 className="fw-semibold mb-0">+62 812-3456-7890</h5>
+                <h5 className="fw-semibold mb-0">+62 812-3456-78</h5>
               </a>
             </div>
           </div>
