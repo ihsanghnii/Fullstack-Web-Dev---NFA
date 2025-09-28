@@ -1,7 +1,7 @@
 function Contact() {
   return (
     <>
-      {/* contact */}
+      {/* Judul */}
       <section id="contact-hero" className="py-5 text-center container">
         <div className="row py-lg-5">
           <div className="col-lg-6 col-md-8 mx-auto">
@@ -14,6 +14,7 @@ function Contact() {
         </div>
       </section>
 
+      {/* Contact */}
       <div className="container px-4 py-5">
         <div className="row justify-content-center align-items-center gx-5 gy-5">
           <div className="col-lg-8">

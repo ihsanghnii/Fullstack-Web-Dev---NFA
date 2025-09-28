@@ -1,10 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 
 function RootLayout() {
-  // Kita ganti Fragment <> menjadi <div> agar bisa diberi class
-  // d-flex: Mengaktifkan Flexbox
-  // flex-column: Mengatur arahnya menjadi vertikal (kolom)
-  // min-vh-100: Memberi tinggi minimal 100% dari tinggi viewport (layar)
   return (
     <div className="d-flex flex-column min-vh-100">
       {/* Header */}
@@ -55,15 +51,12 @@ function RootLayout() {
         </div>
       </header>
 
-      {/* Bagian terpenting kedua: flex-grow-1 */}
-      {/* Kelas ini memberitahu <main> untuk "tumbuh" dan mengisi semua ruang kosong yang tersedia */}
+      {/* Main */}
       <main className="container flex-grow-1">
         <Outlet />
       </main>
 
       {/* Footer */}
-      {/* Kita tambahkan class mt-auto (margin-top: auto) sebagai pengaman tambahan,
-          tapi flex-grow-1 di <main> adalah yang utama */}
       <div className="container mt-auto">
         <footer className="py-3 my-4">
           <ul className="nav justify-content-center border-bottom pb-3 mb-3">

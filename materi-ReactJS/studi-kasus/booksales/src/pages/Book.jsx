@@ -1,17 +1,20 @@
 function Book() {
   return (
     <>
-      {/* Produk List */}
+      {/* Judul */}
       <section id="book" className="py-5 text-center container">
         <div className="row py-lg-5">
           <div className="col-lg-6 col-md-8 mx-auto">
             <h1 className="fw-light">Daftar Buku</h1>
             <p className="lead text-body-secondary">
-              Terdapat berbagai macam buku yang tersedia untuk dibaca semua orang
+              Terdapat berbagai macam buku yang tersedia untuk dibaca semua
+              orang
             </p>
           </div>
         </div>
       </section>
+
+      {/* Product */}
       <div id="daftar-buku" className="album py-5 bg-body-tertiary">
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3 justify-content-center">
