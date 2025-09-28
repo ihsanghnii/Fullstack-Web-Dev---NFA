@@ -1,4 +1,4 @@
-function Book() {
+export default function Book() {
   return (
     <>
       {/* Judul */}
@@ -305,5 +305,3 @@ function Book() {
     </>
   );
 }
-
-export default Book;

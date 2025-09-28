@@ -1,4 +1,4 @@
-function Team() {
+export default function Team() {
   return (
     <>
       {/* Judul */}
@@ -74,5 +74,3 @@ function Team() {
     </>
   );
 }
-
-export default Team;

@@ -1,4 +1,4 @@
-function Contact() {
+export default function Contact() {
   return (
     <>
       {/* Judul */}
@@ -80,5 +80,3 @@ function Contact() {
     </>
   );
 }
-
-export default Contact;
