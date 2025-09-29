@@ -16,7 +16,7 @@ export default function BestSeller() {
               <a href="#best-seller" className="btn btn-primary my-2 m-2">
                 View
               </a>
-              <Link to="/Book" className="btn btn-secondary my-2">
+              <Link to="/Book" className="btn btn-outline-primary my-2">
                 Other Book
               </Link>
             </p>

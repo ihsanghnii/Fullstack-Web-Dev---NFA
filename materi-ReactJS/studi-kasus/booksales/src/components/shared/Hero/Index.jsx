@@ -20,7 +20,7 @@ export default function Hero() {
               </button>
               <button
                 type="button"
-                className="btn btn-outline-secondary btn-lg px-4"
+                className="btn btn-outline-primary btn-lg px-4"
               >
                 Detail
               </button>

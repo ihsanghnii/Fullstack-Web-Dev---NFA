@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import "../../../styles/Index.css"
+import "../../../styles/Index.css";
 
 export default function Header() {
   return (
