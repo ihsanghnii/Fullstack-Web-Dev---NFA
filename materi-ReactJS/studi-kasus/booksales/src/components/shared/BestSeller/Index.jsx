@@ -25,7 +25,7 @@ export default function BestSeller() {
       </section>
 
       {/* Product List */}
-      <div id="best-seller" className="album py-5 bg-body-tertiary">
+      <div id="best-seller" className="album py-5">
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3 justify-content-center">
             <div className="col">
