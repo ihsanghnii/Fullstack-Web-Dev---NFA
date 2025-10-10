@@ -2,9 +2,9 @@
 
     $i = 1;
 
-    while ($i <= 5) {
+    do {
         echo "perulangan ke-$i<br>";
         $i++;
-    }
+    } while ($i <= 5);
 
 ?>

@@ -17,8 +17,18 @@
     </form>
 
     <?php 
-        // $_GET itu build in fungsi dari php
-        $fname = $_GET['fullname']
+
+        if (isset($_GET['proses'])) {
+
+            // $_GET itu build in fungsi dari php
+            $fname = $_GET['fullname'];
+            $almt = $_GET['alamat']; 
+            $tombol = $_GET['proses'];
+    
+            echo "nama: $fname <br>alamat: $almt";
+            
+        }
+
     ?>
 </body>
 </html>
